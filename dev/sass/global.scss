@@ -1,11 +1,11 @@
+html{
+    font-size: 16px;
+}
 body {
 	font-family: "ProximaNova";
 	background-color: $bg-color;
 	color: $color;
     font-size:16px;
-}
-body .container{
-    padding: 0 12px;
 }
 .fw-300 {
 	font-weight: 300;
@@ -53,4 +53,7 @@ body .container{
 }
 .navbar-nav.w-100.justify-content-between.mx-auto{
     max-width: 650px;;
+}
+.navbar-nav.w-100.justify-content-between.mx-auto .nav-link{
+    padding: 10px 8px;
 }
