@@ -1,3 +1,6 @@
+.logo{
+	max-width: 172px;
+}
 .navbar {
 	padding: 37px 0 27px;
 }
@@ -15,7 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+	&:focus {
+		box-shadow: none;
+	}
 }
-&:focus {
-	box-shadow: none;
-}
+
