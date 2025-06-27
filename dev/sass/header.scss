@@ -1,12 +1,21 @@
-.navbar{
-    padding: 37px 0 27px;
+.navbar {
+	padding: 37px 0 27px;
 }
-.navbar-nav{
-    max-width: 818px;
+.navbar-nav {
+	max-width: 818px;
 }
-.nav-link{
-    color:$color;
-    &:hover{
-        color:$primary-color;
-    }
+.nav-link {
+	color: $color;
+	&:hover {
+		color: $primary-color;
+	}
+}
+.hamburger {
+	padding: 8px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+&:focus {
+	box-shadow: none;
 }

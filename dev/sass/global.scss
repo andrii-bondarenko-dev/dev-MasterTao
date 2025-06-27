@@ -1,11 +1,11 @@
-html{
-    font-size: 16px;
+html {
+	font-size: 16px;
 }
 body {
 	font-family: "ProximaNova";
 	background-color: $bg-color;
 	color: $color;
-    font-size:16px;
+	font-size: 16px;
 }
 .fw-300 {
 	font-weight: 300;
@@ -19,41 +19,58 @@ body {
 .fw-700 {
 	font-weight: 700;
 }
-.btn{
-    font-size: 15px;
-    border-radius:90px;
-    background-color:$primary-color;
-    color:$color;
-    border-color:$primary-color;
-    padding: 12px 27px;
-    &:hover{
-        background-color:transparent;
-        color:$color;
-        border:1px solid $primary-color;
-    }
-    &.btn-s{
-        padding: 12px 18px;
-
-    }
-    &.btn-l{
-        font-size: 16px;
-        padding: 19px 21px 19px 33px;
-        img{
-            margin-left: 48px;
-        }
-
-    }
-    &.btn-secondary{
-        background-color:transparent;
-        border:1px solid $primary-color;
-        &:hover{
-            background-color:$primary-color;
-        }
-    }
+.btn {
+	font-size: 15px;
+	border-radius: 90px;
+	background-color: $primary-color;
+	color: $color;
+	border-color: $primary-color;
+	padding: 12px 27px;
+	&:hover {
+		background-color: transparent;
+		color: $color;
+		border: 1px solid $primary-color;
+	}
+	&.btn-s {
+		padding: 12px 18px;
+	}
+	&.btn-l {
+		font-size: 16px;
+		padding: 19px 21px 19px 33px;
+		img {
+			margin-left: 48px;
+		}
+	}
+	&.btn-secondary {
+		background-color: transparent;
+		border: 1px solid $primary-color;
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
 }
-.navbar-nav.w-100.justify-content-between.mx-auto{
-    max-width: 650px;;
+.navbar-nav.w-100.justify-content-between.mx-auto {
+	max-width: 650px;
 }
-.navbar-nav.w-100.justify-content-between.mx-auto .nav-link{
-    padding: 10px 8px;
+.navbar-nav.w-100.justify-content-between.mx-auto .nav-link {
+	padding: 10px 8px;
 }
+.hamburger-box {
+    width: 27px;
+    height: 25px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: #ffffff;
+	width: 27px;
+	height: 2px;
+}
+.hamburger--vortex .hamburger-inner{
+    top: auto;
+    bottom: 2px;
+}
+ 
