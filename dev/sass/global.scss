@@ -26,10 +26,16 @@ body {
 	color: $color;
 	border-color: $primary-color;
 	padding: 12px 27px;
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		background-color: transparent;
 		color: $color;
 		border: 1px solid $primary-color;
+	}
+	&:focus,
+	&:active {
+		box-shadow: none;
 	}
 	&.btn-s {
 		padding: 12px 18px;
@@ -44,11 +50,14 @@ body {
 	&.btn-secondary {
 		background-color: transparent;
 		border: 1px solid $primary-color;
-		&:hover {
+		&:hover,
+		&:active,
+		&:focus {
 			background-color: $primary-color;
 		}
 	}
 }
+
 .navbar-nav.w-100.justify-content-between.mx-auto {
 	max-width: 650px;
 }
@@ -56,8 +65,8 @@ body {
 	padding: 10px 8px;
 }
 .hamburger-box {
-    width: 27px;
-    height: 25px;
+	width: 27px;
+	height: 25px;
 }
 .hamburger-inner,
 .hamburger-inner::before,
@@ -69,8 +78,7 @@ body {
 	width: 27px;
 	height: 2px;
 }
-.hamburger--vortex .hamburger-inner{
-    top: 13px;
-    bottom: 2px;
+.hamburger--vortex .hamburger-inner {
+	top: 13px;
+	bottom: 2px;
 }
- 
