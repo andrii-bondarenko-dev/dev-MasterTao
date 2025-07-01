@@ -28,10 +28,11 @@ if (hamburgers.length > 0) {
 		);
 	});
 }
-const swiper = new Swiper(".swiper", {
+const swiperBanner = new Swiper(".swiper-banner", {
 	// Optional parameters
 	direction: "horizontal",
 	loop: true,
+	spaceBetween: 24,
 
 	// If we need pagination
 	pagination: {
