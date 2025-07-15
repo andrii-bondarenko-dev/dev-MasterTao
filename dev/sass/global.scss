@@ -1,10 +1,11 @@
+@use 'variables' as var;
 html {
 	font-size: 16px;
 }
 body {
 	font-family: "ProximaNova";
-	background-color: $bg-color;
-	color: $color;
+	background-color: var.$bg-color;
+	color: var.$color;
 	font-size: 16px;
 }
 h1,
@@ -55,16 +56,16 @@ h6 {
 .btn {
 	font-size: 15px;
 	border-radius: 90px;
-	background-color: $primary-color;
-	color: $color;
-	border-color: $primary-color;
+	background-color: var.$primary-color;
+	color: var.$color;
+	border-color: var.$primary-color;
 	padding: 12px 27px;
 	&:hover,
 	&:focus,
 	&:active {
 		background-color: transparent;
-		color: $color;
-		border: 1px solid $primary-color;
+		color: var.$color;
+		border: 1px solid var.$primary-color;
 	}
 	&:focus,
 	&:active {
@@ -82,11 +83,11 @@ h6 {
 	}
 	&.btn-secondary {
 		background-color: transparent;
-		border: 1px solid $primary-color;
+		border: 1px solid var.$primary-color;
 		&:hover,
 		&:active,
 		&:focus {
-			background-color: $primary-color;
+			background-color: var.$primary-color;
 		}
 	}
 }
