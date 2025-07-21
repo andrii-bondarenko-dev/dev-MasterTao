@@ -1,3 +1,6 @@
+const selects = document.querySelectorAll("select");
+selects.forEach((item) => NiceSelect.bind(item));
+
 /**
  * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
  *
