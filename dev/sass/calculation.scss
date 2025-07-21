@@ -50,7 +50,7 @@ label {
 }
 input {
 	background-color: #fff;
-	color:#282B38;
+	color: #282b38;
 	font-size: 15px;
 	border-radius: 10px;
 	padding: 18px 20px;
@@ -127,37 +127,38 @@ input[type="checkbox"]:checked + label::before {
 	content: "";
 	background: url(./assets/img/checked.svg) center no-repeat #fff;
 }
-.nice-select{
-	color:#282B38;
+.nice-select {
+	color: #282b38;
 	height: 55px;
 	border-radius: 10px;
 	font-size: 15px;
 	line-height: 52px;
-	&::after{
+	&::after {
 		border-bottom: none;
 		border-right: none;
 		height: 15px;
 		right: 15px;
 		width: 15px;
-		background:url(./assets/img/select-arrow.svg) center -2px / 15px no-repeat;
+		background: url(./assets/img/select-arrow.svg) center -2px / 15px no-repeat;
 		transform: rotate(0);
 		margin-top: -9px;
 	}
-	.list{
+	.list {
 		margin-bottom: 0;
 	}
 }
-.nice-select.open::after{
+.nice-select.open::after {
 	transform: rotate(-180deg);
 	margin-top: -14px;
 	right: 20px;
 }
-.nice-select-dropdown{
+.nice-select-dropdown {
 	width: 100%;
 }
-.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{
-	background-color:#E58D35;
-
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+	background-color: #e58d35;
 }
 .file-name {
 	margin-bottom: 13px;
