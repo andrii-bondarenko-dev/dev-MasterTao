@@ -1,7 +1,10 @@
-.calculation{
-    .template-title{
-        padding-bottom: 52px;
-    }
+.calculation {
+	.template-title {
+		padding-bottom: 52px;
+	}
+	.container {
+		position: relative;
+	}
 }
 
 .calculation-form {
@@ -35,7 +38,7 @@
 .input-box_checkbox {
 	padding-left: 33px;
 	padding-top: 2px;
-    margin-bottom: -9px;
+	margin-bottom: -9px;
 	&:first-child {
 		margin-top: 20px;
 	}
@@ -43,7 +46,7 @@
 label {
 	cursor: pointer;
 	margin-bottom: 6px;
-    letter-spacing: 0.1px;
+	letter-spacing: 0.1px;
 }
 input {
 	background-color: #fff;
@@ -83,9 +86,9 @@ input {
 			}
 		}
 	}
-    &::placeholder{
-        color:#CBCBCB;
-    }
+	&::placeholder {
+		color: #cbcbcb;
+	}
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -125,4 +128,9 @@ input[type="checkbox"]:checked + label::before {
 }
 .file-name {
 	margin-bottom: 13px;
+}
+.calculation-img {
+	position: absolute;
+	bottom: -100px;
+	left: 610px;
 }
