@@ -58,9 +58,11 @@ console.log(bannerVariable);
 
 banner.setAttribute("style", "--header-height: " + headerHeight + "px");
 
-const fileInput = document.querySelector("#calculation-file");
-const fileName = document.querySelector("#file-name");
+const fileInput = document.querySelectorAll('[type="file"]');
 
-fileInput.addEventListener("change", () => {
-	fileName.innerHTML = fileInput.files[0].name;
+fileInput.forEach((item) => {
+	item.addEventListener("change", function () {
+		let fileName = item.closest(".input-box").querySelector(".file-name");
+		fileName.innerHTML = item.files[0].name;
+	});
 });
