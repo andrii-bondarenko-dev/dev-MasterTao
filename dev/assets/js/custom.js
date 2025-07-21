@@ -1,3 +1,6 @@
+const selects = document.querySelectorAll("select");
+selects.forEach((item) => NiceSelect.bind(item));
+
 /**
  * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
  *
@@ -57,3 +60,12 @@ console.log(header.offsetHeight);
 console.log(bannerVariable);
 
 banner.setAttribute("style", "--header-height: " + headerHeight + "px");
+
+const fileInput = document.querySelectorAll('[type="file"]');
+
+fileInput.forEach((item) => {
+	item.addEventListener("change", function () {
+		let fileName = item.closest(".input-box").querySelector(".file-name");
+		fileName.innerHTML = item.files[0].name;
+	});
+});

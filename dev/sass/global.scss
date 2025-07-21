@@ -8,6 +8,9 @@ body {
 	color: var.$color;
 	font-size: 16px;
 }
+section{
+	margin-bottom: $section-margin;
+}
 h1,
 h2,
 h3,
@@ -39,6 +42,9 @@ h5 {
 h6 {
 	font-size: 17px;
 	line-height: 1.26;
+}
+select{
+	display:none;
 }
 
 .fw-300 {
