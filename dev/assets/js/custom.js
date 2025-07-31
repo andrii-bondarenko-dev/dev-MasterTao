@@ -32,18 +32,13 @@ if (hamburgers.length > 0) {
 	});
 }
 const swiperBanner = new Swiper(".swiper-banner", {
-	// Optional parameters
 	direction: "horizontal",
 	loop: true,
 	spaceBetween: 24,
-
-	// If we need pagination
 	pagination: {
 		clickable: true,
 		el: ".swiper-pagination",
 	},
-
-	// Navigation arrows
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -68,4 +63,33 @@ fileInput.forEach((item) => {
 		let fileName = item.closest(".input-box").querySelector(".file-name");
 		fileName.innerHTML = item.files[0].name;
 	});
+});
+
+const advantagesSlideLength = document.querySelectorAll(
+	".advantages .swiper-slide"
+).length;
+
+const swiperAdvantages = new Swiper("#advantages", {
+	spaceBetween: 12,
+	loop: true,
+	simulateTouch: true,
+	slidesPerView: 1,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		enabled: true,
+	},
+	breakpoints: {
+		1025: {
+			spaceBetween: 0,
+			loop: false,
+			slidesPerView: advantagesSlideLength,
+			slidesPerGroup: advantagesSlideLength,
+			simulateTouch: false,
+			pagination: {
+				enabled: false,
+				el: ".swiper-pagination",
+			},
+		},
+	},
 });
