@@ -3,18 +3,22 @@
 	margin: 0;
 	padding: 0;
 }
+
 html {
 	font-size: 16px;
 }
+
 body {
 	font-family: "ProximaNova";
 	background-color: var.$bg-color;
 	color: var.$color;
 	font-size: 16px;
 }
+
 section {
 	margin-bottom: var.$section-margin;
 }
+
 h1,
 h2,
 h3,
@@ -23,44 +27,54 @@ h5,
 h6 {
 	font-weight: 700;
 }
+
 h1 {
 	line-height: 1.26;
 	font-size: 56px;
 }
+
 h2 {
 	line-height: 1.245;
 	font-size: 36px;
 }
+
 h3 {
 	line-height: 1.245;
 	font-size: 22px;
 }
+
 h4 {
 	font-size: 20px;
 	line-height: 1.355;
 }
+
 h5 {
 	font-size: 18px;
 	line-height: 1.245;
 }
+
 h6 {
 	font-size: 17px;
 	line-height: 1.26;
 }
+
 select {
 	display: none;
 }
+
 label {
+	font-weight: 600;
 	cursor: pointer;
 	margin-bottom: 6px;
 	letter-spacing: 0.1px;
 }
+
 input {
 	background-color: var.$color;
 	color: var.$bg-color;
 	font-size: 15px;
 	border-radius: 10px;
-	padding: 18px 20px;
+	padding: 17px 20px;
 	border: none;
 	transition: 0.3s;
 	&:focus-visible {
@@ -98,16 +112,17 @@ input {
 		color: #cbcbcb;
 	}
 }
-/* Chrome, Safari, Edge, Opera */
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
-/* Firefox */
+
 input[type="number"] {
 	-moz-appearance: textfield;
 }
+
 input[type="checkbox"] {
 	display: none;
 	+ label {
@@ -119,6 +134,7 @@ input[type="checkbox"] {
 		}
 	}
 }
+
 input[type="checkbox"] + label::before {
 	content: "";
 	position: absolute;
@@ -130,17 +146,22 @@ input[type="checkbox"] + label::before {
 	border: 1px solid var.$bg-color;
 	border-radius: 4px;
 }
+
 input[type="checkbox"]:checked + label::before {
 	content: "";
 	background: url(./assets/img/checked.svg) center no-repeat var.$color;
 }
+
 .bg-accent {
 	position: relative;
 	padding: 90px 0 100px;
-	.container{
+
+	.container {
+		max-width: 1364px;
 		padding-left: 100px;
 		padding-right: 100px;
 	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -150,41 +171,48 @@ input[type="checkbox"]:checked + label::before {
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 20px;
+		z-index: -1;
 	}
 }
+
 .fw-300 {
 	font-weight: 300;
 }
+
 .fw-400 {
 	font-weight: 400;
 }
+
 .fw-600 {
 	font-weight: 600;
 }
+
 .fw-700 {
 	font-weight: 700;
 }
+
 .btn {
 	font-size: 15px;
 	border-radius: 90px;
 	background-color: var.$primary-color;
 	color: var.$color;
-	border-color: var.$primary-color;
+	border: 1px solid var.$primary-color;
 	padding: 12px 27px;
 	&:hover,
 	&:focus,
 	&:active {
 		background-color: transparent;
 		color: var.$color;
-		border: 1px solid var.$primary-color;
 	}
 	&:focus,
 	&:active {
 		box-shadow: none;
 	}
+
 	&.btn-s {
 		padding: 12px 18px;
 	}
+
 	&.btn-l {
 		font-size: 16px;
 		padding: 19px 21px 19px 33px;
@@ -192,6 +220,7 @@ input[type="checkbox"]:checked + label::before {
 			margin-left: 48px;
 		}
 	}
+
 	&.btn-secondary {
 		background-color: transparent;
 		border: 1px solid var.$primary-color;
@@ -202,12 +231,7 @@ input[type="checkbox"]:checked + label::before {
 		}
 	}
 }
-.navbar-nav.w-100.justify-content-between.mx-auto {
-	max-width: 650px;
-}
-.navbar-nav.w-100.justify-content-between.mx-auto .nav-link {
-	padding: 10px 8px;
-}
+
 .hamburger-box {
 	width: 27px;
 	height: 25px;
@@ -271,6 +295,7 @@ input[type="checkbox"]:checked + label::before {
 		}
 	}
 }
+
 .form-row {
 	display: flex;
 	flex-wrap: wrap;
@@ -280,18 +305,21 @@ input[type="checkbox"]:checked + label::before {
 		margin-bottom: 24px;
 	}
 }
+
 .form-column {
 	width: calc(50% - 15px);
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
+
 .input-box {
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	width: 100%;
 }
+
 .input-box_checkbox {
 	padding-left: 33px;
 	padding-top: 2px;
@@ -300,9 +328,11 @@ input[type="checkbox"]:checked + label::before {
 		margin-top: 20px;
 	}
 }
+
 .file-name {
 	margin-bottom: 13px;
 }
+
 .nice-select {
 	color: var.$bg-color;
 	height: 55px;
@@ -319,18 +349,22 @@ input[type="checkbox"]:checked + label::before {
 		transform: rotate(0);
 		margin-top: -9px;
 	}
+
 	.list {
 		margin-bottom: 0;
 	}
 }
+
 .nice-select.open::after {
 	transform: rotate(-180deg);
 	margin-top: -14px;
 	right: 20px;
 }
+
 .nice-select-dropdown {
 	width: 100%;
 }
+
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
