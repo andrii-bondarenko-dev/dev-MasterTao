@@ -1,7 +1,13 @@
 @use "../variables" as var;
 @media screen and (max-width: 991.98px) {
+	section {
+		margin-bottom: var.$section-margin-mobile;
+	}
 	.logo {
 		max-width: 126px;
+	}
+	h2 {
+		font-size: 24px;
 	}
 	.navbar {
 		padding: 16px 0 15px;
@@ -40,11 +46,27 @@
 			border-radius: 0;
 			inset: 0;
 		}
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
-
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	.template-title {
+		&.template-title-case-3 {
+			text-align: center;
+			max-width: 100%;
+			padding-bottom: 70px;
+			h2 {
+				&::after {
+					@include var.title-line;
+					margin: 0;
+				}
+			}
+		}
 	}
 	.swiper-banner {
 		.swiper-slide {
@@ -91,9 +113,8 @@
 	.input-box_checkbox:first-child {
 		margin-top: 6px;
 	}
-
-	.template-title h2 {
-		font-size: 24px;
-		margin-bottom: 54px;
+	.advantage .advantage__title {
+		max-width: 218px;
+		margin: 0 auto 40px;
 	}
 }

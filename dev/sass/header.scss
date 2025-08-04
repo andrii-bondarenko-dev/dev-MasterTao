@@ -22,10 +22,9 @@
 }
 
 .hamburger {
+	@include var.flex-centred;
 	padding: 8px 7px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	&:focus {
 		box-shadow: none;
 	}

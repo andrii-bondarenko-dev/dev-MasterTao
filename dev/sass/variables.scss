@@ -8,11 +8,20 @@ $bg-color: #282b38;
 $bg-color-accent: #363a4d;
 $color: #fff;
 $section-margin: 100px;
-/* 
-@mixin bg-accent {
- 
+$section-margin-mobile: 60px;
+
+@mixin title-line {
+	content: "";
+	position: absolute;
+	width: 85px;
+	height: 2px;
+	background-color: $primary-color;
+	bottom: 54px;
+	left: 50%;
+	transform: translateX(-50%);
 }
-nav ul {
-  @include bg-accent;
+@mixin flex-centred {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-   */
