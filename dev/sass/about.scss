@@ -1,0 +1,18 @@
+@use "variables" as var;
+
+.about {
+	.container {
+		display: flex;
+		gap: 35px;
+	}
+	.about_text {
+		padding: 41px;
+    max-width: 555px;
+	}
+	.about_text__description {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 170%;
+		color: var.$color;
+	}
+}
