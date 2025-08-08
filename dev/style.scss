@@ -15,6 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @use "sass/variables";
 @use "sass/fonts";
 @use "sass/global";
+@use "sass/templates";
 @use "sass/header";
 @use "sass/first-screen";
 @use "sass/calculation";
@@ -23,7 +24,3 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @use "sass/services";
 @use "sass/footer";
 @use "sass/media/media";
-
-
-
-

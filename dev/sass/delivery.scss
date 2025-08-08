@@ -4,7 +4,6 @@
 	background-color: var.$bg-color-accent;
 	border-radius: 20px;
 	width: 360px;
-	height: 482px;
 	border: none;
 
 	&__img-box {
@@ -17,6 +16,7 @@
 	&-title {
 		font-size: 22px;
 		margin-bottom: 12px;
+		text-align: center;
 	}
 	&__options-list {
 		list-style: none;
