@@ -1,6 +1,7 @@
 @use "variables" as var;
 
 .advantages {
+
 	.swiper-pagination {
 		position: static;
 	}
@@ -36,6 +37,7 @@
 		text-align: center;
 	}
 }
+
 .advantages .swiper-horizontal > .swiper-pagination-bullets,
 .advantages .swiper-pagination-bullets.swiper-pagination-horizontal {
 	top: calc(100% - 59px);

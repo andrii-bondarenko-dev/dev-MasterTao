@@ -10,14 +10,17 @@
 		border-radius: 20px 20px 0 0;
 		overflow: hidden;
 	}
+
 	&-body {
 		padding: 27px 20px;
 	}
+
 	&-title {
 		font-size: 22px;
 		margin-bottom: 12px;
 		text-align: center;
 	}
+
 	&__options-list {
 		list-style: none;
 		display: flex;
@@ -26,24 +29,29 @@
 		padding: 0;
 		margin-bottom: 8px;
 	}
+
 	&__options-item {
 		@include var.flex-centred;
 		gap: 8px;
 	}
+
 	&__price {
 		margin-bottom: 22px;
 		font-size: 22px;
 		text-align: center;
+
 		span {
 			&:first-child {
 				color: #a3a3a3;
 			}
 		}
+
 		strong {
 			font-size: 45px;
 			line-height: 125%;
 		}
 	}
+
 	&__btn-row {
 		display: flex;
 		gap: 14px;
@@ -51,8 +59,10 @@
 			width: 50%;
 		}
 	}
+
 	&.card_services {
 		position: relative;
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -64,6 +74,7 @@
 			);
 			border-radius: 20px;
 		}
+		
 		.card-body {
 			text-align: left;
 			display: flex;

@@ -69,7 +69,8 @@ label {
 	letter-spacing: 0.1px;
 }
 
-input {
+input,
+textarea {
 	background-color: var.$color;
 	color: var.$bg-color;
 	font-size: 15px;
@@ -152,6 +153,12 @@ input[type="checkbox"]:checked + label::before {
 	background: url(./assets/img/checked.svg) center no-repeat var.$color;
 }
 
+textarea {
+	min-height: 55px;
+	height: 70px;
+	max-height: 160px;
+}
+
 .bg-accent {
 	position: relative;
 	padding: 55px 0 60px;
@@ -204,10 +211,12 @@ input[type="checkbox"]:checked + label::before {
 	&:active {
 		background-color: transparent;
 		color: var.$color;
+		border-color: var.$secondary-color;
 	}
 	&:focus,
 	&:active {
 		box-shadow: none;
+		border-color: var.$secondary-color;
 	}
 
 	&.btn-s {
@@ -217,6 +226,7 @@ input[type="checkbox"]:checked + label::before {
 	&.btn-l {
 		font-size: 16px;
 		padding: 19px 21px 19px 33px;
+		
 		img {
 			margin-left: 48px;
 		}
@@ -247,10 +257,12 @@ input[type="checkbox"]:checked + label::before {
 	width: 27px;
 	height: 2px;
 }
+
 .hamburger--vortex .hamburger-inner {
 	top: 13px;
 	bottom: 2px;
 }
+
 .template-title {
 	text-align: center;
 	position: relative;
@@ -259,6 +271,7 @@ input[type="checkbox"]:checked + label::before {
 	h2 {
 		text-transform: uppercase;
 		margin-bottom: 7px;
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -270,10 +283,12 @@ input[type="checkbox"]:checked + label::before {
 			transform: translateX(-50%);
 		}
 	}
+
 	h3 {
 		font-weight: 400;
 		font-size: 24px;
 	}
+
 	&.template-title-case-2 {
 		text-align: left;
 		h2 {
@@ -283,9 +298,11 @@ input[type="checkbox"]:checked + label::before {
 			}
 		}
 	}
+
 	&.template-title-case-3 {
 		max-width: 626px;
 		text-align: left;
+
 		h2 {
 			&:after {
 				display: inline-block;
@@ -302,6 +319,7 @@ input[type="checkbox"]:checked + label::before {
 	flex-wrap: wrap;
 	gap: 20px 30px;
 	margin-bottom: 34px;
+
 	&:last-of-type {
 		margin-bottom: 24px;
 	}
@@ -325,6 +343,7 @@ input[type="checkbox"]:checked + label::before {
 	padding-left: 33px;
 	padding-top: 2px;
 	margin-bottom: -9px;
+
 	&:first-child {
 		margin-top: 20px;
 	}
@@ -340,6 +359,7 @@ input[type="checkbox"]:checked + label::before {
 	border-radius: 10px;
 	font-size: 15px;
 	line-height: 52px;
+	
 	&::after {
 		border-bottom: none;
 		border-right: none;
