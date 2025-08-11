@@ -129,4 +129,18 @@
 		flex-direction: column;
 		gap: 28px;
 	}
+	.cooperate-row {
+		flex-direction: column;
+		gap: 45px;
+
+		.cooperate-column__one {
+			.cooperate__img-box {
+				order: 1;
+			}
+			.cooperate_text {
+				order: 2;
+				padding: 25px;
+			}
+		}
+	}
 }

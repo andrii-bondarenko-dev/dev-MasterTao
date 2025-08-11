@@ -1,0 +1,31 @@
+.cooperate-row {
+	display: flex;
+	flex-direction: row;
+	gap: 45px;
+
+	.cooperate-column__one,
+	.cooperate-column__two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cooperate-column__one {
+		.cooperate_text {
+			align-items: flex-start;
+			padding: 46px;
+			min-width: 430px;
+		}
+	}
+	.cooperate-column__two {
+		.cooperate_text {
+			align-items: flex-start;
+			max-width: 523px;
+			margin-bottom: 46px;
+		}
+		.cooperate_text {
+			font-weight: 300;
+			font-size: 17px;
+			line-height: 157%;
+		}
+	}
+}
