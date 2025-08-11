@@ -1,0 +1,62 @@
+@use "variables" as var;
+
+nav {
+	display: flex;
+	gap: 105px;
+}
+
+address {
+	max-width: 263px;
+	margin-right: 90px;
+
+	img {
+		margin-bottom: 29px;
+	}
+}
+
+.footer-line {
+	background-color: var.$primary-color;
+	width: 1140px;
+	height: 2px;
+	margin-bottom: 40px;
+}
+
+.footer-row {
+	display: flex;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: 163%;
+	font-weight: 400;
+
+	a {
+		text-decoration: none;
+		color: var.$color;
+	}
+}
+
+.footer-icon {
+	width: 34px;
+	height: 33px;
+	display: inline-flex;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+}
+
+.cargo-transportation {
+	font-weight: 700;
+	font-size: 20px;
+	p {
+		color: #85899c;
+		font-size: 16px;
+	}
+	a {
+		text-decoration: none;
+	}
+}

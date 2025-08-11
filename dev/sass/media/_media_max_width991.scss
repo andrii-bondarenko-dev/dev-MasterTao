@@ -1,11 +1,14 @@
 @use "../variables" as var;
 @media screen and (max-width: 991.98px) {
+	
 	section {
 		margin-bottom: var.$section-margin-mobile;
 	}
+
 	.logo {
 		max-width: 126px;
 	}
+
 	h2 {
 		font-size: 24px;
 	}
@@ -41,25 +44,31 @@
 		font-size: 24px;
 		line-height: 222%;
 	}
+
 	.bg-accent {
+	
 		&::before {
 			border-radius: 0;
 			inset: 0;
 		}
+		
 		.container {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
 	}
+
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 	.template-title {
+
 		&.template-title-case-3 {
 			text-align: center;
 			max-width: 100%;
 			padding-bottom: 70px;
+			
 			h2 {
 				&::after {
 					@include var.title-line;
@@ -68,6 +77,7 @@
 			}
 		}
 	}
+
 	.swiper-banner {
 		.swiper-slide {
 			display: flex;
@@ -129,18 +139,37 @@
 		flex-direction: column;
 		gap: 28px;
 	}
-	.cooperate-row {
-		flex-direction: column;
-		gap: 45px;
 
-		.cooperate-column__one {
-			.cooperate__img-box {
-				order: 1;
-			}
-			.cooperate_text {
-				order: 2;
-				padding: 25px;
-			}
+	.questions-form {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: 300px;
+	}
+
+	.partnership__content {
+		gap: 36px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.partnership__content-item {
+			width: 100%;
+			font-size: 14px;
 		}
+
+		.order-mobile-negative {
+			order: -1;
+		}
+	}
+
+	address {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav {
+		display: none;
 	}
 }
