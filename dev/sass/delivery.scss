@@ -1,5 +1,9 @@
 @use "variables" as var;
-
+.delivery{
+.template-title h2::after {
+    background-color: var.$secondary-color;
+}
+}
 .card {
 	background-color: var.$bg-color-accent;
 	border-radius: 20px;

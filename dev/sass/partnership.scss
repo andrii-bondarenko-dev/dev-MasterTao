@@ -1,5 +1,9 @@
 @use "variables" as var;
-
+.partnership{
+	.template-title h2::after {
+    background-color: var.$secondary-color;
+}
+}
 .partnership__content {
 	display: flex;
 	gap: 56px;

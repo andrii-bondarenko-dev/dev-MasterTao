@@ -1,13 +1,15 @@
 @use "variables" as var;
 
 .calculation {
-	
 	.template-title {
 		padding-bottom: 52px;
 	}
 
 	.container {
 		position: relative;
+	}
+	.template-title h2::after {
+		background-color: var.$secondary-color;
 	}
 }
 
